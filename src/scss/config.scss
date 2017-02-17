@@ -1,0 +1,34 @@
+/*
+* COLOR
+*/
+
+/* Palette */
+$primary-color: #35587a;
+
+/* Header */
+$bg-color-header: #131f2b;
+$font-color-header: #fff;
+
+/* Nav */
+$font-color-nav: #fff;
+$bg-color-nav: $primary-color;
+$bg-color-nav-hover: lighten($primary-color, 10%);
+
+
+/* FONT */
+$primary-font: 'Lora', serif;
+
+$font-size-default: 18px;
+
+/*
+* SIZES
+*/
+
+/* Body */
+$main-width: 1024px;
+
+/*
+* RESPONSIVE
+*/
+
+$breakpoint-width: 1200px;

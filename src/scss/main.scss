@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import "config.scss";
+
+/*
+* DEFAULTING FOR ALL THE BROWSERS
+*/
+html, body {
+  width: 100%;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: $primary-font;
+  font-size: $font-size-default;
+}
+
+html, body, p, div, article, h1, h2, h3, h4, h5, h6, form {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*********
+* HEADER *
+*********/
+
+body > header {
+  font-size: 4em;
+  background-color: $bg-color-header;
+  color: $font-color-header;
+  text-align: center;
+  padding: 0.25em;
+}
+
+body > header span {
+  display: block;
+  font-size: 50%;
+  color: #ccc;
+}
+
+/******
+* NAV *
+******/
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+nav a {
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 2em;
+  text-decoration: none;
+  color: $font-color-nav;
+  background-color: $bg-color-nav;
+  transition: all 0.25s;
+}
+
+nav a:hover {
+  background-color: $bg-color-nav-hover;
+}
+
+main {
+  width: 100%;
+  max-width: 1024px;
+  display: block;
+  padding: 1em;
+  margin: auto;
+}
+
+/*********
+* TITLES *
+*********/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: 400;
+  font-size: 75%;
+  opacity: 0.75;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/**********
+* BUTTONS *
+**********/
+
+button {
+  color: #fff;
+  padding: 1rem;
+  background-color: $primary-color;
+  border: 0px solid black;
+  font-size: $font-size-default;
+  outline: 0;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background-color: lighten($primary-color, 10%);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: darken($primary-color, 10%);
+}
+
+/*******
+* TEXT *
+*******/
+
+p {
+  margin: 1em 0;
+}
+
+article {
+  margin: 1.5em 0;
+  padding: 1em;
+}
+
+section {
+  margin: 2em 0;
+}
+
+/*******
+* MISC *
+*******/
+
+hr {
+  border: 2px solid $primary-color;
+  width: 50%;
+  margin: 1em auto;
+}
+
+@media (min-width: $breakpoint-width) {
+  main {
+    display: block;
+  }
+}
